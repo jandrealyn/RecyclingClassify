@@ -1,0 +1,52 @@
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.loginTree{
+    position: absolute;
+    z-index:-5;
+    width: 60%;
+    top: 5%;
+    right: 0;
+
+    transform: rotate(36.38deg);
+    opacity: 0.2;
+}
+
+.loginContainer{
+    font-family: 'Comfortaa', sans-serif;
+    color: #A4B2A3;
+    margin: auto;
+    margin-top: 10%;
+    width: 60%;
+
+    background: rgba(56, 64, 54, 0.1);
+    border-radius: 20px;
+    padding: 8%;
+
+}
+
+h3{
+    color: #216515;
+}
+
+a{
+    color: #216515;
+}
+
+a:hover {
+    color: #216515 !important;
+}
+
+button {
+    color: #A4B2A3 !important;
+    /*border: #A4B2A3 !important;*/
+
+    /*box-sizing: border-box;*/
+
+    background: rgba(255, 255, 255, 0.05);
+    border: 2.5px solid #A4B3A3;
+    border-radius: 20px;
+
+}

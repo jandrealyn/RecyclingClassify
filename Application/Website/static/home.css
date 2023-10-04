@@ -1,0 +1,42 @@
+.expenseRect{
+    display: flex;
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 20%;
+    left: 10%;
+
+    background: #EDF1E8``;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.viewExpenseRect{
+    display: flex;
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 20%;
+    left: 60%;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.titleExpense{
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-group{
+    display: flex;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+}
