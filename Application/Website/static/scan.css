@@ -1,0 +1,97 @@
+.rectangleScan {
+    height: 60vh;
+    width: 50vw;
+    border-radius: 50px;
+    background: #8AAA85;
+    box-shadow:  35px 35px 70px #6d8669,
+             -35px -35px 70px #a7cea1;
+    margin: auto;
+    margin-top: 8%;
+}
+
+.rectangleBtn {
+    height: 5vh;
+    width: 50vw;
+    margin-top: 8%;
+    display: grid;
+}
+
+button, .but{
+  margin: 5% auto;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #8AAA85;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #8AAA85;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+button:before, .but:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #8AAA85;
+  z-index: -1;
+}
+
+button:hover, button:focus, .but:hover, .but:focus {
+  color: white;
+}
+
+button:hover:before, button:focus:before, .but:hover:before, .but:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+button:active, .but:active {
+  transform: scale(0.9);
+}
+
+.butter, p{
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #8AAA85;
+ }
+
+ .imageContainer{
+    margin-top: 20px;
+ }
+
+ .imageContainer img {
+  width: 50%;
+  height: 50%;
+  z-index:3;
+  position: relative;
+  object-fit: contain;
+}
+
+.submitRect {
+    position: absolute;
+    margin: auto;
+    margin-left: 20%;
+    margin-top: 35%;
+}
+
+p {
+    position: absolute;
+    margin: auto;
+    margin-left: 33.5%;
+    margin-top: 1%;
+    color: white;
+}

@@ -1,0 +1,5 @@
+my_model.h5
+env/
+.DS_Store
+.git~/
+*.pyc

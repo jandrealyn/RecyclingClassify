@@ -1,0 +1,29 @@
+
+.col{
+    position: fixed;
+    height: 50%;
+    width: 25vw;
+    bottom: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col2{
+  position: fixed;
+  width: 100vw;
+  height: 60%;
+  right: 0;
+  left: 0;
+  bottom: 0%;
+}
+
+.trackerTree{
+    display: block;
+    width: 100%;
+}
+
+.trackerGround{
+ display: block;
+ width: 100%;
+}
+

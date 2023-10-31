@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="../static/scan.css">
+
+<div class="scanGroup">
+    <div class="rectangleScan">
+        <form method="POST" enctype="multipart/form-data" action="/">
+            <input class="butter" type="file" id="myFile" name="uploaded-file" accept=".jpg, .png, .jpeg">
+            <div class="submitRect">
+                <input class="but" type="submit" value="Submit">
+            </div>
+            {% if img_path %}
+            <div class="imageContainer">
+                <!--Takes the uploaded image and shows it-->
+                <img src="{{ img_path }}" alt="Uploaded Image {{ img_path }}">
+            </div>
+            <div class="textPrediction">
+                <!--Takes the uploaded image and shows it-->
+                <p> Prediction: {{ prediction }} </p>
+            </div>
+            {% endif %}
+        </form>
+    </div>
+    <p>File Uploaded!</p>
+<!--    <form action="/detect_object" target="_blank">-->
+<!--        &lt;!&ndash;Detects object on submit&ndash;&gt;-->
+<!--        <input class="but" type="submit" value="Detect Item" />-->
+<!--    </form>-->
+</div>
+
+{% endblock %}
+
