@@ -13,6 +13,9 @@ class User(db.Model, UserMixin):
 class imageTracker(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    counter = db.Column(db.Integer, default=0)
+    def increment_counter(self):
+        self.counter += 1
 
 def init_db():
     db.create_all()

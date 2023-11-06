@@ -35,9 +35,15 @@ def create_app():
     app.register_blueprint(ai, url_prefix='/')
 
     from .models import User
+    from .models import imageTracker
 
     with app.app_context():
         db.create_all()
+        if not imageTracker.query.first():
+            # Create a default imageTracker record
+            default_tracker = imageTracker()
+            db.session.add(default_tracker)
+            db.session.commit()
 
     # Using login manager to authorize users when logging into the app
 
@@ -48,6 +54,7 @@ def create_app():
     @login_manager.user_loader
     def load_user(id):
         return User.query.get(int(id))
+
 
     return app
 

@@ -1,7 +1,7 @@
 # Laras code for authorizing users and information
 
 from flask import Blueprint, Markup, jsonify, render_template, request, flash, redirect, url_for, request, session, current_app
-from .models import User
+from .models import User, imageTracker
 from . import db
 import os
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -64,6 +64,7 @@ def signup():
             flash('Password must be at least 5 characters.', category='error')
         else:
             new_user = User(username=username, password=generate_password_hash(password1, method='sha256'))
+            # add in a new tarcker here
             db.session.add(new_user)
             db.session.commit()
             login_user(new_user, remember=True)
