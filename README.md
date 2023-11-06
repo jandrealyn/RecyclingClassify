@@ -1,4 +1,4 @@
-# Recycling Classificaiton App
+# Recycling Classification App
 
 This application was created for an assignment with Yoobee Colleges. 
 
