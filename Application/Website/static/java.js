@@ -43,10 +43,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
-//if ({{ current_user.is_authenticated }} && {{ image_was_uploaded }}) {
-//        // Show the banner
-//        document.getElementById('banner').style.display = 'block';
-//        // Customize the banner text, e.g., based on the timestamp of the last upload
-//        document.getElementById('banner').textContent = 'Your tracker has been updated!';
-//        }

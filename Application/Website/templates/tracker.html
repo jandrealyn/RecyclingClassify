@@ -2,9 +2,35 @@
 
 {% block content %}
 <link rel="stylesheet" href="../static/tracker.css">
-
+    <div class="counter">
+        Counter: {{ counter }}
+    </div>
     <div class="col">
-        <img src="static/images/tree.png" alt="tree" class="trackerTree">
+        {% if counter == 0 %}
+            <div class="textContainer">
+                <p>Start scanning to grow your plant!</p>
+            </div>
+        {% elif counter == 1 %}
+            <!-- Show dirt image for 1 scanned image -->
+            <img src="static/images/dirt.png" alt="Dirt" class="trackerDirt">
+            <div class="textContainer">
+                <p>You’ve just planted a seedling, scan more images to watch it grow!</p>
+            </div>
+        {% elif 1 < counter < 5 %}
+            <!-- Show dirt image with sapling for over 1 image scanned-->
+            <img src="static/images/dirt.png" alt="Dirt" class="trackerDirt">
+            <img src="static/images/sapling.webp" alt="Sapling" class="trackerSapling">
+            <div class="textContainer">
+                <p>Wow, your plant is getting bigger!</p>
+            </div>
+        {% else %}
+            <!-- Show tree image with flower for more than 5 images scanned -->
+            <img src="static/images/blossomtree.png" alt="Blossom Tree" class="trackerTree">
+            <img src="static/images/flowers.png" alt="Flower" class="trackerFlowers">
+            <div class="textContainer">
+                <p>Your plant is now fully grown, well done!</p>
+            </div>
+        {% endif %}
     </div>
     <div class="col2">
         <img src="static/images/ground.png" alt="ground" class="trackerGround">

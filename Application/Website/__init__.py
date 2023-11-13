@@ -1,4 +1,3 @@
-# Lara's Code initializing the application
 
 from flask import Flask, Response, Blueprint
 from flask_sqlalchemy import SQLAlchemy
@@ -12,12 +11,12 @@ db = SQLAlchemy()
 DB_NAME = "database.db"
 
 UPLOAD_FOLDER = os.path.join('/Users/larissasmith/Projects/RecyclingDetection/RecyclingApplication/Recycling/Website/static', 'uploads')
-# # Define allowed files
+# Define allowed files
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
 # Configure upload folder for Flask application
 
-# Creating the app and using blue print to register our auth.py and views.py
+# Creating the app and using blueprint to register our auth.py and views.py
 
 def create_app():
     app = Flask(__name__)

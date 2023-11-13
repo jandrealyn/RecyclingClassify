@@ -65,3 +65,4 @@ virtualenv-clone==0.5.7
 Werkzeug==2.3.0
 wrapt==1.15.0
 WTForms==3.0.1
+Flask-Limiter==2.0.0

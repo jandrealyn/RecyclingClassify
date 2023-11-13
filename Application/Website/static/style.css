@@ -16,7 +16,7 @@
 
 body {
   height: 100vh;
-  background: #EDF1E8;
+  background-color: #EDF1E8 !important;
 }
 
 /* nav styling start */
@@ -25,8 +25,9 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: white;
+  background-color: #EDF1E8 !important;
   font-family: 'Comfortaa', sans-serif;
+  z-index: 4;
 }
 
 .logo img {
@@ -78,11 +79,11 @@ ul.nav a:hover {
   margin-top: 100px;
 }
 
-/*.col1 {
+.col1 {
   flex-basis: 40%;
   position: relative;
-  margin-left: 150px;
-}*/
+  margin-left: 0px;
+}
 
 .col1 h2 {
   font-size: 40px;
@@ -91,8 +92,20 @@ ul.nav a:hover {
 
 .col1 h4 {
   font-size: 24px;
-  color: #78B808;
-  font-weight: 20;
+  color: #8AAA85;
+  font-weight: 1;
+}
+
+@media (max-width: 768px) {
+  .col1 h2{
+    font-size: 20px; /* Adjust the font size for phones */
+  }
+}
+
+@media (max-width: 768px) {
+  .col1 h4{
+    font-size: 14px; /* Adjust the font size for phones */
+  }
 }
 
 .col2 {
@@ -113,6 +126,7 @@ ul.nav a:hover {
   width: 100%;
   transform: rotate(36.38deg);
   opacity: 0.2;
+  margin-top: 30px;
 }
 
 /*welcome page styling end*/
