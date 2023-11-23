@@ -18,7 +18,7 @@ class imageTracker(db.Model):
     counter = db.Column(db.Integer, default=0)
     def __init__(self, user_id):
         super().__init__(user_id=user_id)
-        self.counter = 0
+        self.counter = 1
     def increment_counter(self):
         self.counter += 1
 
